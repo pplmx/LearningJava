@@ -11,12 +11,13 @@ import java.util.concurrent.*;
  * Created with IntelliJ IDEA.
  *
  * @author: mystic
- * @date: 2017/12/1 15:20
+ * @date: 2017/12/5 16:00
  * @since: JDK9.0.1
  * @version: X
  * Description:
  */
-public class Java {
+public class Tester {
+
 
     /**
      * 创建线程池

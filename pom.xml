@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Java9</name>
+    <name>Java</name>
     <description>for learning</description>
 
     <properties>
