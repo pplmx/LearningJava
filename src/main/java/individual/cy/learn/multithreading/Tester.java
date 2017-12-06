@@ -1,4 +1,4 @@
-package individual.cy.learn;
+package individual.cy.learn.multithreading;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import individual.cy.learn.multithreading.CreateThreadByCallableInterface;
