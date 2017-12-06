@@ -14,6 +14,8 @@ import java.util.Objects;
  */
 public class FileUtils {
 
+    private FileUtils(){}
+
     private static boolean copyFile(File source, File target) {
         try (BufferedInputStream bis = new BufferedInputStream(new FileInputStream(source));
              BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(target))) {
@@ -33,6 +35,7 @@ public class FileUtils {
     private static boolean copyDirectory(File source, File target) {
         boolean isOkay;
         if (!target.exists()) {
+            //noinspection ResultOfMethodCallIgnored
             target.mkdirs();
         }
         if(source.isDirectory()){
