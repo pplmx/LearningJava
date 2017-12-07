@@ -14,6 +14,8 @@ import java.util.Objects;
  */
 public class FileUtils {
 
+    private static boolean isOkay = true;
+
     private FileUtils(){}
 
     private static boolean copyFile(File source, File target) {
@@ -33,7 +35,6 @@ public class FileUtils {
     }
 
     private static boolean copyDirectory(File source, File target) {
-        boolean isOkay;
         if (!target.exists()) {
             //noinspection ResultOfMethodCallIgnored
             target.mkdirs();
