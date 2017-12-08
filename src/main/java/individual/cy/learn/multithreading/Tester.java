@@ -1,9 +1,6 @@
 package individual.cy.learn.multithreading;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
-import individual.cy.learn.multithreading.CreateThreadByCallableInterface;
-import individual.cy.learn.multithreading.CreateThreadByRunnableInterface;
-import individual.cy.learn.multithreading.CreateThreadByThreadClass;
 
 import java.util.concurrent.*;
 
