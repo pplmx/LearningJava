@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+group = 'individual.cy'
+version = '1.0-SNAPSHOT'
+description = 'Learning Java'
+sourceCompatibility = '11'
+
+dependencies {
+    implementation 'com.google.guava:guava:28.1-jre'
+    implementation 'org.projectlombok:lombok:1.18.10'
+}
