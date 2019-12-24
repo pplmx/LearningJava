@@ -1,7 +1,6 @@
 package individual.cy.learn.mess;
 
 import java.util.HashSet;
-import java.util.Random;
 import java.util.Set;
 
 /**
@@ -25,7 +24,7 @@ public class Tester {
                 s.setAge(16);
                 continue;
             }
-            s.setId(i+1);
+            s.setId(i + 1);
             s.setAge(16);
             set.add(s);
         }

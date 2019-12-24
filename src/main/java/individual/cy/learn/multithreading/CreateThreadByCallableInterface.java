@@ -13,7 +13,7 @@ import java.util.concurrent.Callable;
  */
 public class CreateThreadByCallableInterface implements Callable<Integer> {
     @Override
-    public Integer call(){
+    public Integer call() {
         int sum = 0, loopTimes = 100;
         for (int i = 0; i < loopTimes; i++) {
             System.out.println(Thread.currentThread().getName() + " " + i);

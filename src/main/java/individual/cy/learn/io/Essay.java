@@ -1,6 +1,11 @@
 package individual.cy.learn.io;
 
-import java.io.*;
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.Objects;
 
 /**
@@ -22,7 +27,7 @@ public class Essay {
             int len;
             byte[] bytes = new byte[1024];
             while ((len = bis.read()) != -1) {
-                bos.write(bytes,0,len);
+                bos.write(bytes, 0, len);
             }
             bos.flush();
         } catch (IOException e) {

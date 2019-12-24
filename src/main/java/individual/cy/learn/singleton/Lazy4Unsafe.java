@@ -11,8 +11,11 @@ package individual.cy.learn.singleton;
  */
 public class Lazy4Unsafe {
     private static Lazy4Unsafe singleton = null;
-    private Lazy4Unsafe(){}
-    public static Lazy4Unsafe getSingleton(){
+
+    private Lazy4Unsafe() {
+    }
+
+    public static Lazy4Unsafe getSingleton() {
         if (singleton == null) {
             singleton = new Lazy4Unsafe();
         }
