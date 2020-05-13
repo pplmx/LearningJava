@@ -13,11 +13,11 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created with IntelliJ IDEA.
  *
- * @author: mystic
- * @date: 2017/12/5 16:00
- * @since: JDK9.0.1
- * @version: X
+ * @author mystic
+ * @version X
  * Description:
+ * @date 2017/12/5 16:00
+ * @since JDK9.0.1
  */
 public class Tester {
 
@@ -25,8 +25,8 @@ public class Tester {
     /**
      * 创建线程池
      */
-    private static ThreadFactory threadFactory = new ThreadFactoryBuilder().setNameFormat("pool-%d").build();
-    private static ExecutorService executorService = new ThreadPoolExecutor(5, 200, 0L,
+    private static final ThreadFactory threadFactory = new ThreadFactoryBuilder().setNameFormat("pool-%d").build();
+    private static final ExecutorService executorService = new ThreadPoolExecutor(5, 200, 0L,
             TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>(1024), threadFactory, new ThreadPoolExecutor.AbortPolicy());
 
     public static void main(String[] args) {
@@ -34,18 +34,6 @@ public class Tester {
         //testThread(loopTimes);
         testRunnable(loopTimes);
         //testCallable(loopTimes);
-    }
-
-    private static void testThread(int loopTimes) {
-        for (int i = 0; i < loopTimes; i++) {
-            System.out.println(Thread.currentThread().getName() + " " + i);
-            if (i == 30) {
-                Thread thread1 = new CreateThreadByThreadClass();
-                Thread thread2 = new CreateThreadByThreadClass();
-                thread1.start();
-                thread2.start();
-            }
-        }
     }
 
     private static void testRunnable(int loopTimes) {
@@ -57,6 +45,18 @@ public class Tester {
                 executorService.execute(myRunnable);
                 executorService.execute(myRunnable);
                 executorService.shutdown();
+            }
+        }
+    }
+
+    private static void testThread(int loopTimes) {
+        for (int i = 0; i < loopTimes; i++) {
+            System.out.println(Thread.currentThread().getName() + " " + i);
+            if (i == 30) {
+                Thread thread1 = new CreateThreadByThreadClass();
+                Thread thread2 = new CreateThreadByThreadClass();
+                thread1.start();
+                thread2.start();
             }
         }
     }

@@ -3,11 +3,11 @@ package individual.cy.learn;
 /**
  * Created with IntelliJ IDEA.
  *
- * @author: mystic
- * @date: 2017/12/5 16:06
- * @since: JDK9.0.1
- * @version: X
+ * @author mystic
+ * @version X
  * Description:
+ * @date 2017/12/5 16:06
+ * @since JDK9.0.1
  */
 public class Collection {
     public static void main(String[] args) {

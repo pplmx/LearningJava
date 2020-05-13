@@ -1,0 +1,160 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package individual.cy.learn.pojo;
+
+import java.util.Objects;
+
+public class User {
+    private int id;
+    private String name;
+    private String email;
+
+    public User() {
+    }
+
+    public int hashCode() {
+        return Objects.hash(new Object[]{this.id, this.name, this.email});
+    }
+
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        } else if (!(o instanceof User)) {
+            return false;
+        } else {
+            User user = (User)o;
+            return this.id == user.id && this.name.equals(user.name) && this.email.equals(user.email);
+        }
+    }
+}
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package individual.cy.learn.pojo;
+
+import java.util.Objects;
+
+public class User {
+    private int id;
+    private String name;
+    private String email;
+
+    public User() {
+    }
+
+    public int hashCode() {
+        return Objects.hash(new Object[]{this.id, this.name, this.email});
+    }
+
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        } else if (!(o instanceof User)) {
+            return false;
+        } else {
+            User user = (User)o;
+            return this.id == user.id && this.name.equals(user.name) && this.email.equals(user.email);
+        }
+    }
+}
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package individual.cy.learn.pojo;
+
+import java.util.Objects;
+
+public class User {
+    private int id;
+    private String name;
+    private String email;
+
+    public User() {
+    }
+
+    public int hashCode() {
+        return Objects.hash(new Object[]{this.id, this.name, this.email});
+    }
+
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        } else if (!(o instanceof User)) {
+            return false;
+        } else {
+            User user = (User)o;
+            return this.id == user.id && this.name.equals(user.name) && this.email.equals(user.email);
+        }
+    }
+}
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package individual.cy.learn.pojo;
+
+import java.util.Objects;
+
+public class User {
+    private int id;
+    private String name;
+    private String email;
+
+    public User() {
+    }
+
+    public int hashCode() {
+        return Objects.hash(new Object[]{this.id, this.name, this.email});
+    }
+
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        } else if (!(o instanceof User)) {
+            return false;
+        } else {
+            User user = (User)o;
+            return this.id == user.id && this.name.equals(user.name) && this.email.equals(user.email);
+        }
+    }
+}
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package individual.cy.learn.pojo;
+
+import java.util.Objects;
+
+public class User {
+    private int id;
+    private String name;
+    private String email;
+
+    public User() {
+    }
+
+    public int hashCode() {
+        return Objects.hash(new Object[]{this.id, this.name, this.email});
+    }
+
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        } else if (!(o instanceof User)) {
+            return false;
+        } else {
+            User user = (User)o;
+            return this.id == user.id && this.name.equals(user.name) && this.email.equals(user.email);
+        }
+    }
+}

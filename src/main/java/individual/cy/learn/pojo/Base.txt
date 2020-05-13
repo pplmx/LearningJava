@@ -1,0 +1,14 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package individual.cy.learn.pojo;
+
+public class Base {
+    private int id;
+    private String name;
+
+    public Base() {
+    }
+}

@@ -3,14 +3,14 @@ package individual.cy.learn.proxy;
 /**
  * Created with IntelliJ IDEA.
  *
- * @author: mystic
- * @date: 2/27/2018 17:19
- * @since: JDK1.8.0_144
- * @version: X
+ * @author mystic
+ * @version X
  * Description:
+ * @date 2/27/2018 17:19
+ * @since JDK1.8.0_144
  */
 public class JavaProgrammer implements IProgrammer {
-    private String name;
+    private final String name;
 
     public JavaProgrammer(String name) {
         this.name = name;

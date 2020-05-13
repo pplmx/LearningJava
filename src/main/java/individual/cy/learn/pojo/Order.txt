@@ -1,0 +1,88 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package individual.cy.learn.pojo;
+
+import java.time.Instant;
+
+public class Order extends Base {
+    private Instant created;
+    private Instant updated;
+
+    public Order() {
+    }
+
+    public Instant getCreated() {
+        return this.created;
+    }
+
+    public Instant getUpdated() {
+        return this.updated;
+    }
+
+    public void setCreated(Instant created) {
+        this.created = created;
+    }
+
+    public void setUpdated(Instant updated) {
+        this.updated = updated;
+    }
+
+    public String toString() {
+        Instant var10000 = this.getCreated();
+        return "Order(created=" + var10000 + ", updated=" + this.getUpdated() + ")";
+    }
+
+    public boolean equals(Object o) {
+        if (o == this) {
+            return true;
+        } else if (!(o instanceof Order)) {
+            return false;
+        } else {
+            Order other = (Order)o;
+            if (!other.canEqual(this)) {
+                return false;
+            } else if (!super.equals(o)) {
+                return false;
+            } else {
+                Object this$created = this.getCreated();
+                Object other$created = other.getCreated();
+                if (this$created == null) {
+                    if (other$created != null) {
+                        return false;
+                    }
+                } else if (!this$created.equals(other$created)) {
+                    return false;
+                }
+
+                Object this$updated = this.getUpdated();
+                Object other$updated = other.getUpdated();
+                if (this$updated == null) {
+                    if (other$updated != null) {
+                        return false;
+                    }
+                } else if (!this$updated.equals(other$updated)) {
+                    return false;
+                }
+
+                return true;
+            }
+        }
+    }
+
+    protected boolean canEqual(Object other) {
+        return other instanceof Order;
+    }
+
+    public int hashCode() {
+        int PRIME = true;
+        int result = super.hashCode();
+        Object $created = this.getCreated();
+        result = result * 59 + ($created == null ? 43 : $created.hashCode());
+        Object $updated = this.getUpdated();
+        result = result * 59 + ($updated == null ? 43 : $updated.hashCode());
+        return result;
+    }
+}

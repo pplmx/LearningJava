@@ -8,14 +8,14 @@ import java.lang.reflect.Method;
 /**
  * Created with IntelliJ IDEA.
  *
- * @author: mystic
- * @date: 2/27/2018 17:40
- * @since: JDK1.8.0_144
- * @version: X
+ * @author mystic
+ * @version X
  * Description:
+ * @date 2/27/2018 17:40
+ * @since JDK1.8.0_144
  */
 public class ProgrammerDynamicProxy implements InvocationHandler {
-    private IProgrammer programmer;
+    private final IProgrammer programmer;
 
     public ProgrammerDynamicProxy(IProgrammer programmer) {
         this.programmer = programmer;

@@ -1,0 +1,66 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package individual.cy.learn.pojo;
+
+import java.math.BigDecimal;
+
+public class Goods extends Base {
+    private BigDecimal price;
+
+    public Goods() {
+    }
+
+    public BigDecimal getPrice() {
+        return this.price;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
+
+    public String toString() {
+        return "Goods(price=" + this.getPrice() + ")";
+    }
+
+    public boolean equals(Object o) {
+        if (o == this) {
+            return true;
+        } else if (!(o instanceof Goods)) {
+            return false;
+        } else {
+            Goods other = (Goods)o;
+            if (!other.canEqual(this)) {
+                return false;
+            } else if (!super.equals(o)) {
+                return false;
+            } else {
+                Object this$price = this.getPrice();
+                Object other$price = other.getPrice();
+                if (this$price == null) {
+                    if (other$price != null) {
+                        return false;
+                    }
+                } else if (!this$price.equals(other$price)) {
+                    return false;
+                }
+
+                return true;
+            }
+        }
+    }
+
+    protected boolean canEqual(Object other) {
+        return other instanceof Goods;
+    }
+
+    public int hashCode() {
+        int PRIME = true;
+        int result = super.hashCode();
+        Object $price = this.getPrice();
+        result = result * 59 + ($price == null ? 43 : $price.hashCode());
+        return result;
+    }
+}

@@ -11,15 +11,15 @@ import java.net.Socket;
 /**
  * Created with IntelliJ IDEA.
  *
- * @author: mystic
- * @date: 2017/12/5 13:57
- * @since: JDK9.0.1
- * @version: X
+ * @author mystic
+ * @version X
  * Description:
+ * @date 2017/12/5 13:57
+ * @since JDK9.0.1
  */
 public class ServerThread implements Runnable {
-    private BufferedReader br;
-    private BufferedWriter bw;
+    private final BufferedReader br;
+    private final BufferedWriter bw;
 
     ServerThread(Socket socket) throws IOException {
         br = new BufferedReader(new InputStreamReader(socket.getInputStream()));

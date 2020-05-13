@@ -5,11 +5,11 @@ import java.util.Objects;
 /**
  * Created with IntelliJ IDEA.
  *
- * @author: mystic
- * @date: 2017/12/26 13:39
- * @since: JDK9.0.1
- * @version: X
+ * @author mystic
+ * @version X
  * Description:
+ * @date 2017/12/26 13:39
+ * @since JDK9.0.1
  */
 public class Student {
 
@@ -33,6 +33,12 @@ public class Student {
     }
 
     @Override
+    public int hashCode() {
+
+        return Objects.hash(id, age);
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) {
             return true;
@@ -43,12 +49,6 @@ public class Student {
         Student student = (Student) o;
         return Objects.equals(id, student.id) &&
                 Objects.equals(age, student.age);
-    }
-
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(id, age);
     }
 
     @Override

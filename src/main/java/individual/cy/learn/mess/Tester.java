@@ -6,11 +6,11 @@ import java.util.Set;
 /**
  * Created with IntelliJ IDEA.
  *
- * @author: mystic
- * @date: 2017/12/26 13:41
- * @since: JDK1.8.0_144
- * @version: X
+ * @author mystic
+ * @version X
  * Description:
+ * @date 2017/12/26 13:41
+ * @since JDK1.8.0_144
  */
 public class Tester {
 

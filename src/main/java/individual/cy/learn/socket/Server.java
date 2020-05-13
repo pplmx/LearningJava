@@ -14,22 +14,20 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created with IntelliJ IDEA.
  *
- * @author: mystic
- * @date: 2017/12/1 15:20
- * @since: JDK9.0.1
- * @version: X
+ * @author mystic
+ * @version X
  * Description:
+ * @date 2017/12/1 15:20
+ * @since JDK9.0.1
  */
 public class Server {
 
-    private ServerSocket serverSocket = null;
-
-    private static ThreadFactory threadFactory = new ThreadFactoryBuilder().setNameFormat("pool-%d").build();
-
-    private static ExecutorService executorService = new ThreadPoolExecutor(
+    private static final ThreadFactory threadFactory = new ThreadFactoryBuilder().setNameFormat("pool-%d").build();
+    private static final ExecutorService executorService = new ThreadPoolExecutor(
             5, 200, 0L,
             TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>(1024),
             threadFactory, new ThreadPoolExecutor.AbortPolicy());
+    private ServerSocket serverSocket = null;
 
     private Server() {
         try {
@@ -40,6 +38,11 @@ public class Server {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void main(String[] args) {
+        Server server = new Server();
+        server.start();
     }
 
     private void start() {
@@ -56,10 +59,5 @@ public class Server {
                 e.printStackTrace();
             }
         }
-    }
-
-    public static void main(String[] args) {
-        Server server = new Server();
-        server.start();
     }
 }
