@@ -10,5 +10,9 @@ package individual.cy.learn.proxy;
  * @since JDK1.8.0_144
  */
 public interface IProgrammer {
+    /**
+     * some demands needed to be implemented
+     * @param demandName demand name
+     */
     void implementsDemand(String demandName);
 }

@@ -22,11 +22,11 @@ import java.util.concurrent.TimeUnit;
  */
 public class Server {
 
-    private static final ThreadFactory threadFactory = new ThreadFactoryBuilder().setNameFormat("pool-%d").build();
+    private static final ThreadFactory THREAD_FACTORY = new ThreadFactoryBuilder().setNameFormat("pool-%d").build();
     private static final ExecutorService executorService = new ThreadPoolExecutor(
             5, 200, 0L,
             TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>(1024),
-            threadFactory, new ThreadPoolExecutor.AbortPolicy());
+            THREAD_FACTORY, new ThreadPoolExecutor.AbortPolicy());
     private ServerSocket serverSocket = null;
 
     private Server() {

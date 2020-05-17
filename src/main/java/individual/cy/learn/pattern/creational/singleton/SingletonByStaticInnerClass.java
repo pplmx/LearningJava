@@ -1,4 +1,4 @@
-package individual.cy.learn.singleton;
+package individual.cy.learn.pattern.creational.singleton;
 
 /**
  * Created with IntelliJ IDEA.
