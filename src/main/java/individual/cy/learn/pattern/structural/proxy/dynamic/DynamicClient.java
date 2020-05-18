@@ -19,11 +19,11 @@ public class DynamicClient {
         IDesigner designer = new JavaDesigner("cc");
         // 创建中介类实例
         InvocationHandler handler = new DesignerDynamicProxy(designer);
-        Class clazz = designer.getClass();
-        // 获取类加载器
-        ClassLoader classLoader = clazz.getClassLoader();
         // 动态产生一个代理类
-        IDesigner proxy = (IDesigner) Proxy.newProxyInstance(classLoader, clazz.getInterfaces(), handler);
+        IDesigner proxy = (IDesigner) Proxy.newProxyInstance(
+                designer.getClass().getClassLoader(),
+                designer.getClass().getInterfaces(),
+                handler);
         // 通过代理类,执行doSomething()方法
         proxy.implementsDemand("Modify User Management");
     }
