@@ -1,18 +1,15 @@
-package individual.cy.learn.proxy;
+package individual.cy.learn.pattern.structural.proxy;
 
 /**
  * Created with IntelliJ IDEA.
  *
  * @author mystic
- * @version X
- * Description:
  * @date 2/27/2018 17:25
- * @since JDK1.8.0_144
  */
-public class ProgrammerProxy implements IProgrammer {
-    private final IProgrammer programmer;
+public class DesignerProxy implements IDesigner {
+    private final IDesigner programmer;
 
-    public ProgrammerProxy(IProgrammer programmer) {
+    public DesignerProxy(IDesigner programmer) {
         this.programmer = programmer;
     }
 

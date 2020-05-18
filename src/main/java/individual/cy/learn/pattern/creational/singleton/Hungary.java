@@ -4,10 +4,9 @@ package individual.cy.learn.pattern.creational.singleton;
  * Created with IntelliJ IDEA.
  *
  * @author mystic
- * @version X
+ * <p>
  * Description: 单例-饿汉式
  * @date 2017/12/6 14:14
- * @since JDK9.0.1
  */
 public class Hungary {
     /**

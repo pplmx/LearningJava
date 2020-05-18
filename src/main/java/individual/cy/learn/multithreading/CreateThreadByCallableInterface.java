@@ -6,10 +6,7 @@ import java.util.concurrent.Callable;
  * Created with IntelliJ IDEA.
  *
  * @author mystic
- * @version X
- * Description:
  * @date 2017/12/5 8:53
- * @since JDK9.0.1
  */
 public class CreateThreadByCallableInterface implements Callable<Integer> {
     @Override

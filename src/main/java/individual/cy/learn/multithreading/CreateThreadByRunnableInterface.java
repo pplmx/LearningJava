@@ -4,10 +4,7 @@ package individual.cy.learn.multithreading;
  * Created with IntelliJ IDEA.
  *
  * @author mystic
- * @version X
- * Description:
  * @date 2017/12/5 8:52
- * @since JDK9.0.1
  */
 public class CreateThreadByRunnableInterface implements Runnable {
     @Override

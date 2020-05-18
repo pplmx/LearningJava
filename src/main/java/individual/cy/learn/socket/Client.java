@@ -9,10 +9,7 @@ import java.util.Scanner;
  * Created with IntelliJ IDEA.
  *
  * @author mystic
- * @version X
- * Description:
  * @date 2017/12/5 14:56
- * @since JDK9.0.1
  */
 public class Client {
     public static void main(String[] args) throws IOException {

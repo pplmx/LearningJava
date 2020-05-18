@@ -1,18 +1,15 @@
-package individual.cy.learn.proxy;
+package individual.cy.learn.pattern.structural.proxy;
 
 /**
  * Created with IntelliJ IDEA.
  *
  * @author mystic
- * @version X
- * Description:
  * @date 2/27/2018 17:27
- * @since JDK1.8.0_144
  */
 public class Customer {
     public static void main(String[] args) {
-        IProgrammer programmer = new JavaProgrammer("cc");
-        IProgrammer proxy = new ProgrammerProxy(programmer);
+        IDesigner designer = new JavaDesigner("cc");
+        IDesigner proxy = new DesignerProxy(designer);
         proxy.implementsDemand("Add User Management");
     }
 }

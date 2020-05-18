@@ -4,10 +4,9 @@ package individual.cy.learn.pattern.creational.singleton;
  * Created with IntelliJ IDEA.
  *
  * @author mystic
- * @version X
+ * <p>
  * Description: 单例-枚举方式实现
  * @date 2017/12/6 15:35
- * @since JDK9.0.1
  */
 public enum SingletonEnum {
     /**

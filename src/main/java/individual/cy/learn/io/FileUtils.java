@@ -12,10 +12,7 @@ import java.util.Objects;
  * Created with IntelliJ IDEA.
  *
  * @author mystic
- * @version X
- * Description:
  * @date 2017/12/6 8:37
- * @since JDK9.0.1
  */
 public class FileUtils {
 

@@ -14,10 +14,7 @@ import java.util.concurrent.TimeUnit;
  * Created with IntelliJ IDEA.
  *
  * @author mystic
- * @version X
- * Description:
  * @date 2017/12/5 16:00
- * @since JDK9.0.1
  */
 public class Tester {
 
