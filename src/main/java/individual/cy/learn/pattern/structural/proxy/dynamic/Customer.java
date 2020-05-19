@@ -12,7 +12,7 @@ import java.lang.reflect.Proxy;
  * @author mystic
  * @date 2/27/2018 17:44
  */
-public class DynamicClient {
+public class Customer {
 
     public static void main(String[] args) {
         // 被代理的真实对象
