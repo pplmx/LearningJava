@@ -21,15 +21,19 @@ public class FactoryPatternTester {
 
         System.out.println();
 
-        ShapeCreator.CIRCLE.getShape().draw();
-        ShapeCreator.RECTANGLE.getShape().draw();
-        ShapeCreator.SQUARE.getShape().draw();
+        ShapeCreator.CIRCLE.getInstance().draw();
+        ShapeCreator.RECTANGLE.getInstance().draw();
+        ShapeCreator.SQUARE.getInstance().draw();
 
         System.out.println();
 
-        System.out.println(ShapeCreator.CIRCLE.getShape());
-        System.out.println(ShapeCreator.CIRCLE.getShape());
-        System.out.println(ShapeCreator.CIRCLE.getShape());
+        System.out.println(ShapeCreator.CIRCLE.getInstance());
+        System.out.println(ShapeCreator.CIRCLE.getInstance());
+        System.out.println(ShapeCreator.CIRCLE.getInstance());
+        // Or this usage
+        System.out.println(ShapeCreator.getShape(ShapeCreator.CIRCLE));
+        System.out.println(ShapeCreator.getShape(ShapeCreator.CIRCLE));
+        System.out.println(ShapeCreator.getShape(ShapeCreator.CIRCLE));
 
         System.out.println();
 
