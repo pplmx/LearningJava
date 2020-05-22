@@ -1,24 +1,22 @@
 package individual.cy.learn.pattern.creational.abstractfactory;
 
-import individual.cy.learn.pattern.creational.factory.Shape;
-import individual.cy.learn.pattern.creational.factory.ShapeCreator;
-
-import java.util.function.Supplier;
-
 /**
  * @author mystic
  */
-public enum AbstractFactory {
-    COLOR(ColorCreator::new),SHAPE(ShapeCreator::new);
+public abstract class AbstractFactory {
+    /**
+     * To get a 2d geometric shape
+     *
+     * @param type shape name
+     * @return Geometric Shape
+     */
+    public abstract GeometricShape getGeometricShape2D(ShapeType2D type);
 
-    private final Supplier<ColorCreator> colorCreatorSupplier;
-    private final Supplier<ShapeCreator> shapeCreatorSupplier;
-
-    AbstractFactory(Supplier<ColorCreator> colorCreatorSupplier) {
-        this.colorCreatorSupplier = colorCreatorSupplier;
-    }
-
-    AbstractFactory(Supplier<ShapeCreator> shapeCreatorSupplier) {
-        this.shapeCreatorSupplier = shapeCreatorSupplier;
-    }
+    /**
+     * To get a 3d geometric shape
+     *
+     * @param type shape name
+     * @return Geometric Shape
+     */
+    public abstract GeometricShape getGeometricShape3D(ShapeType3D type);
 }

@@ -3,9 +3,9 @@ package individual.cy.learn.pattern.creational.abstractfactory;
 /**
  * @author mystic
  */
-public class Red implements Color {
+public class Cube implements GeometricShape {
     @Override
-    public void fill() {
-        System.out.println("Red.fill");
+    public void draw() {
+        System.out.println("Cube.draw");
     }
 }

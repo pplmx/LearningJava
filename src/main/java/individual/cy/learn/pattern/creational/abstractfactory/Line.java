@@ -3,9 +3,9 @@ package individual.cy.learn.pattern.creational.abstractfactory;
 /**
  * @author mystic
  */
-public class Purple implements Color {
+public class Line implements GeometricShape {
     @Override
-    public void fill() {
-        System.out.println("Purple.fill");
+    public void draw() {
+        System.out.println("Line.draw");
     }
 }

@@ -3,9 +3,9 @@ package individual.cy.learn.pattern.creational.abstractfactory;
 /**
  * @author mystic
  */
-public interface Color {
+public enum ShapeType3D {
     /**
-     * to fill a color
+     * 3d geometric shape
      */
-    void fill();
+    SPHERE, CUBE, CYLINDER
 }
