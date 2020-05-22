@@ -54,7 +54,7 @@ public class Computer {
             return this;
         }
 
-        public ComputerBuilder display(String display) {
+        public Computer.ComputerBuilder display(String display) {
             this.display = display;
             return this;
         }
