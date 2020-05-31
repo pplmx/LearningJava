@@ -23,5 +23,8 @@ public class StrategyPatternTester {
         // change behavior dynamically
         ken.setJumpBehavior(longJump);
         ken.jump();
+
+        ken.setKickBehavior(tornadoKick);
+        ken.kick();
     }
 }
