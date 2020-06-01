@@ -8,15 +8,15 @@ public class FactoryPatternTester {
         ShapeFactory factory = new ShapeFactory();
 
         // Acquire Circle
-        Shape circle = factory.getShape("circle");
+        Shape circle = factory.getShape(ShapeFactory.ShapeEnum.CIRCLE);
         circle.draw();
 
         // Acquire Rectangle
-        Shape rectangle = factory.getShape("rectangle");
+        Shape rectangle = factory.getShape(ShapeFactory.ShapeEnum.RECTANGLE);
         rectangle.draw();
 
         // Acquire Square
-        Shape square = factory.getShape("square");
+        Shape square = factory.getShape(ShapeFactory.ShapeEnum.SQUARE);
         square.draw();
 
         System.out.println();

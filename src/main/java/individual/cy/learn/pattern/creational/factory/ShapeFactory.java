@@ -4,17 +4,23 @@ package individual.cy.learn.pattern.creational.factory;
  * @author mystic
  */
 public class ShapeFactory {
-    public Shape getShape(String shapeType) {
-        if (shapeType == null) {
-            return null;
+    public Shape getShape(ShapeEnum shapeType) {
+        switch (shapeType) {
+            case CIRCLE:
+                return new Circle();
+            case RECTANGLE:
+                return new Rectangle();
+            case SQUARE:
+                return new Square();
+            default:
+                return null;
         }
-        if (shapeType.equalsIgnoreCase("circle")) {
-            return new Circle();
-        } else if (shapeType.equalsIgnoreCase("rectangle")) {
-            return new Rectangle();
-        } else if (shapeType.equalsIgnoreCase("square")) {
-            return new Square();
-        }
-        return null;
+    }
+
+    enum ShapeEnum {
+        /**
+         * Geometric Shape type
+         */
+        CIRCLE, RECTANGLE, SQUARE
     }
 }
