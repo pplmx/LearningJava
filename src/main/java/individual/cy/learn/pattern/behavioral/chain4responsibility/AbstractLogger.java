@@ -17,15 +17,35 @@ public abstract class AbstractLogger {
 
     protected AbstractLogger nextLogger;
 
-    public void setLogger(AbstractLogger nextLogger) {
+    public void setNextLogger(AbstractLogger nextLogger) {
         this.nextLogger = nextLogger;
     }
 
     public void logMessage(int level, String message) {
-        if (this.level < level) {
+        if (this.level <= level) {
             write(message);
         }
+        if (nextLogger != null) {
+            nextLogger.logMessage(level, message);
+        }
     }
+
+    public void logMsg(LogLevel logLevel, String message) {
+        switch (logLevel){
+            case ALL:
+            case TRACE:
+            case DEBUG:
+            case INFO:
+            case WARN:
+            case ERROR:
+            case FATAL:
+                write(message);
+            case OFF:
+            default:
+                break;
+        }
+    }
+
 
     /**
      * write log
