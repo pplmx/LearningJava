@@ -1,5 +1,8 @@
 package individual.cy.learn.pattern.behavioral.chain4responsibility;
 
+/**
+ * @author mystic
+ */
 public class DebugLogger extends AbstractLogger {
     public DebugLogger() {
         this.level = AbstractLogger.DEBUG;

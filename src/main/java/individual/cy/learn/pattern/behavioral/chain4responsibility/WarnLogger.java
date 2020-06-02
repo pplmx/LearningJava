@@ -1,5 +1,8 @@
 package individual.cy.learn.pattern.behavioral.chain4responsibility;
 
+/**
+ * @author mystic
+ */
 public class WarnLogger extends AbstractLogger {
     public WarnLogger() {
         this.level = AbstractLogger.WARN;

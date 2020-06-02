@@ -1,17 +1,16 @@
 package individual.cy.learn.pattern.behavioral.chain4responsibility;
 
+/**
+ * @author mystic
+ */
 public enum LogLevel {
     /**
      * Log Level
      */
-    ALL(7),
-    TRACE(6),
-    DEBUG(5),
-    INFO(4),
+    DEBUG(1),
+    INFO(2),
     WARN(3),
-    ERROR(2),
-    FATAL(1),
-    OFF(0);
+    ERROR(4);
 
     private final int logLevel;
 

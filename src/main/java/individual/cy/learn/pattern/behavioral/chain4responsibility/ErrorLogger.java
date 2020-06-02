@@ -1,9 +1,12 @@
 package individual.cy.learn.pattern.behavioral.chain4responsibility;
 
+/**
+ * @author mystic
+ */
 public class ErrorLogger extends AbstractLogger {
     public ErrorLogger() {
         this.level = AbstractLogger.ERROR;
-        setNextLogger(new FatalLogger());
+        setNextLogger(null);
     }
 
     @Override
