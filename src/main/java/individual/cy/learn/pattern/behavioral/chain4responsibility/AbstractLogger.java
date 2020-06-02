@@ -26,19 +26,6 @@ public abstract class AbstractLogger {
         }
     }
 
-    public void logMsg(LogLevel logLevel, String message) {
-        switch (logLevel){
-            case DEBUG:
-            case INFO:
-            case WARN:
-            case ERROR:
-                write(message);
-            default:
-                break;
-        }
-    }
-
-
     /**
      * write log
      *
