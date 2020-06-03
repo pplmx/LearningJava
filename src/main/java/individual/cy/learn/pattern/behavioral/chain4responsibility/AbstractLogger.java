@@ -4,10 +4,10 @@ package individual.cy.learn.pattern.behavioral.chain4responsibility;
  * @author mystic
  */
 public abstract class AbstractLogger {
-    public final static int DEBUG = 2;
-    public final static int INFO = 3;
-    public final static int WARN = 4;
-    public final static int ERROR = 5;
+    public final static int DEBUG = 1;
+    public final static int INFO = 2;
+    public final static int WARN = 3;
+    public final static int ERROR = 4;
 
     protected int level;
 
