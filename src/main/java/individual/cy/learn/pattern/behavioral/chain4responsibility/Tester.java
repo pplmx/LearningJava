@@ -5,15 +5,15 @@ package individual.cy.learn.pattern.behavioral.chain4responsibility;
  */
 public class Tester {
     public static void main(String[] args) {
-        AbstractLogger infoLogger = new InfoLogger();
+        AbstractLogger debugLogger = new DebugLogger();
         System.out.println("**************************");
-        infoLogger.logMessage(1, "Here is a debug message.");
+        debugLogger.logMessage(1, "Here is a debug message.");
         System.out.println("==========================");
-        infoLogger.logMessage(2, "Here is a info message.");
+        debugLogger.logMessage(2, "Here is a info message.");
         System.out.println("==========================");
-        infoLogger.logMessage(3, "Here is a warn message.");
+        debugLogger.logMessage(3, "Here is a warn message.");
         System.out.println("==========================");
-        infoLogger.logMessage(4, "Here is a error message.");
+        debugLogger.logMessage(4, "Here is a error message.");
         System.out.println("==========================");
     }
 }

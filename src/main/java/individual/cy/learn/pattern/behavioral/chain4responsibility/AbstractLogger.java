@@ -18,6 +18,7 @@ public abstract class AbstractLogger {
     }
 
     public void logMessage(int level, String message) {
+        // if no ability to handle, hand up it to successor
         if (this.level == level) {
             write(message);
         } else {
