@@ -19,9 +19,6 @@ configurations {
 
 dependencies {
     implementation 'com.google.guava:guava:29.0-jre'
-    implementation 'net.openhft:chronicle-core:2.19.7'
-
-    implementation 'org.openjdk.jmh:jmh-core:1.23'
 
     compileOnly 'org.projectlombok:lombok:1.18.12'
     annotationProcessor 'org.projectlombok:lombok:1.18.12'
