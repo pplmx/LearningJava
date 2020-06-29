@@ -13,8 +13,10 @@ import java.net.URI;
 public class HdfsClient {
 
     public static void main(String[] args) {
-        URI uri = URI.create("hdfs://127.0.0.1:9000");
+        URI uri = URI.create("hdfs://127.0.0.1:9864");
         Configuration conf = new Configuration();
+        conf.set("dfs.client.use.datanode.hostname", "true");
+        conf.set("dfs.datanode.use.datanode.hostname", "true");
         conf.set("dfs.replication", "2");
         conf.set("dfs.blocksize", "64m");
         conf.addResource(new Path("/etc/hadoop/conf/core-site.xml"));
