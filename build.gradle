@@ -9,7 +9,7 @@ repositories {
 group = 'individual.cy'
 version = '1.0-SNAPSHOT'
 description = 'Learning Java'
-sourceCompatibility = '8'
+sourceCompatibility = '11'
 
 configurations {
     compileOnly {
