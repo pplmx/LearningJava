@@ -19,8 +19,12 @@ public class HdfsClient {
 //        conf.set("dfs.datanode.use.datanode.hostname", "true");
 
         Path src = new Path("file:///C:\\Users\\test.txt");
-        Path dest = new Path("/var/tmp/test.txt");
+        Path dest = new Path("/cc");
+
         try (FileSystem fs = FileSystem.get(uri, conf, "root")) {
+            if (!fs.exists(dest)) {
+                fs.mkdirs(dest);
+            }
             fs.copyFromLocalFile(src, dest);
         } catch (InterruptedException | IOException e) {
             e.printStackTrace();
