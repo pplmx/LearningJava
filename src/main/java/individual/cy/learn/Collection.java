@@ -1,5 +1,8 @@
 package individual.cy.learn;
 
+import java.util.List;
+import java.util.Set;
+
 /**
  * Created with IntelliJ IDEA.
  *
@@ -8,10 +11,10 @@ package individual.cy.learn;
  */
 public class Collection {
     public static void main(String[] args) {
-        // 不可变,不可继续添加元素
-        //Set<Integer> set = Set.of(1,2,12,23,3);
-        //List<String> list = List.of("hello","world");
-        //System.out.println("set = " + set);
-        //System.out.println("list = " + list);
+        // The following collections are immutable and CANNOT append the new element
+        Set<Integer> set = Set.of(1,2,12,23,3);
+        List<String> list = List.of("hello","world");
+        System.out.println("set = " + set);
+        System.out.println("list = " + list);
     }
 }

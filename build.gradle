@@ -9,7 +9,7 @@ repositories {
 group = 'individual.cy'
 version = '1.0-SNAPSHOT'
 description = 'Learning Java'
-sourceCompatibility = '11'
+sourceCompatibility = '15'
 
 configurations {
     compileOnly {
@@ -18,14 +18,12 @@ configurations {
 }
 
 dependencies {
-    implementation 'com.google.guava:guava:29.0-jre'
-    implementation 'org.apache.hadoop:hadoop-client:3.2.1'
-    implementation 'org.apache.hadoop:hadoop-hdfs:3.2.1'
-
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.6.2'
-
-    compileOnly 'org.projectlombok:lombok:1.18.12'
-    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+    implementation 'com.google.guava:guava:30.1-jre'
+    implementation 'org.apache.hadoop:hadoop-client:3.3.0'
+    implementation 'org.apache.hadoop:hadoop-hdfs:3.3.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+    compileOnly 'org.projectlombok:lombok:1.18.16'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
 }
 
 test {
