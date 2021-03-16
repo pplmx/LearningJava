@@ -21,7 +21,7 @@ dependencies {
     implementation 'com.google.guava:guava:30.1-jre'
     implementation 'org.apache.hadoop:hadoop-client:3.3.0'
     implementation 'org.apache.hadoop:hadoop-hdfs:3.3.0'
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.1'
     compileOnly 'org.projectlombok:lombok:1.18.16'
     annotationProcessor 'org.projectlombok:lombok:1.18.16'
 }
