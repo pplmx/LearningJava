@@ -1,4 +1,4 @@
-package individual.cy.learn.io;
+﻿package individual.cy.learn.io;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -35,9 +35,9 @@ public class Essay {
     }
 
     public static boolean copy(File source, File target) {
-        // 创建文件路径
+        // create file path
         File newFile = new File(target, source.getName());
-        // 这里的target,只当做目录处理
+        // this "target" is only as a directory
         if (!target.exists()) {
             isOkay = target.mkdirs();
         }

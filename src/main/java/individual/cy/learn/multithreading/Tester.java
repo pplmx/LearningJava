@@ -38,7 +38,7 @@ public class Tester {
             System.out.println(Thread.currentThread().getName() + " " + i);
             if (i == 30) {
                 CreateThreadByRunnableInterface myRunnable = new CreateThreadByRunnableInterface();
-                // 不要显示创建线程,通过线程池创建
+                // Do NOT create thread directly, please create it by threadpool
                 executorService.execute(myRunnable);
                 executorService.execute(myRunnable);
                 executorService.shutdown();
