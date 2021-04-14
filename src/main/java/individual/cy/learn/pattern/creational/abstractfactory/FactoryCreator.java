@@ -17,11 +17,11 @@ public enum FactoryCreator {
         this.factorySupplier = factorySupplier;
     }
 
-    public AbstractFactory getInstance() {
-        return factorySupplier.get();
-    }
-
     public static AbstractFactory getFactory(FactoryCreator creator) {
         return creator.getInstance();
+    }
+
+    public AbstractFactory getInstance() {
+        return factorySupplier.get();
     }
 }

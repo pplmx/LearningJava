@@ -21,9 +21,9 @@ public class Customer {
         InvocationHandler handler = new DesignerDynamicProxy(designer);
         // 动态产生一个代理类
         IDesigner proxy = (IDesigner) Proxy.newProxyInstance(
-                designer.getClass().getClassLoader(),
-                designer.getClass().getInterfaces(),
-                handler);
+            designer.getClass().getClassLoader(),
+            designer.getClass().getInterfaces(),
+            handler);
         // 通过代理类,执行doSomething()方法
         proxy.implementsDemand("Modify User Management");
     }

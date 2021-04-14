@@ -4,8 +4,8 @@ package individual.cy.learn.pattern.creational.prototype;
  * @author mystic
  */
 public abstract class BaseShape implements Cloneable {
-    private String id;
     protected String type;
+    private String id;
 
     /**
      * to draw a geometric

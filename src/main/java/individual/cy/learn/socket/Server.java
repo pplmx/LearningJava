@@ -21,9 +21,9 @@ public class Server {
 
     private static final ThreadFactory THREAD_FACTORY = new ThreadFactoryBuilder().setNameFormat("pool-%d").build();
     private static final ExecutorService executorService = new ThreadPoolExecutor(
-            5, 200, 0L,
-            TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>(1024),
-            THREAD_FACTORY, new ThreadPoolExecutor.AbortPolicy());
+        5, 200, 0L,
+        TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>(1024),
+        THREAD_FACTORY, new ThreadPoolExecutor.AbortPolicy());
     private ServerSocket serverSocket = null;
 
     private Server() {

@@ -6,8 +6,9 @@ package individual.cy.learn.pattern.structural.adapter;
 public interface MediaPlayer {
     /**
      * play a media resource
+     *
      * @param audioType audio type
-     * @param filename file name
+     * @param filename  file name
      */
     void play(String audioType, String filename);
 }

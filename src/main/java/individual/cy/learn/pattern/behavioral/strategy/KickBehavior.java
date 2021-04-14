@@ -3,7 +3,7 @@ package individual.cy.learn.pattern.behavioral.strategy;
 /**
  * @author mystic
  */
-public interface KickBehavior{
+public interface KickBehavior {
     /**
      * kick
      */

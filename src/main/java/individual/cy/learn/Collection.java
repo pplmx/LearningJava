@@ -12,8 +12,8 @@ import java.util.Set;
 public class Collection {
     public static void main(String[] args) {
         // The following collections are immutable and CANNOT append the new element
-        Set<Integer> set = Set.of(1,2,12,23,3);
-        List<String> list = List.of("hello","world");
+        Set<Integer> set = Set.of(1, 2, 12, 23, 3);
+        List<String> list = List.of("hello", "world");
         System.out.println("set = " + set);
         System.out.println("list = " + list);
     }

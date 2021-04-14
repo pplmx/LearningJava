@@ -6,6 +6,7 @@ package individual.cy.learn.pattern.behavioral.iterator;
 public interface Container {
     /**
      * get iterator
+     *
      * @return Iterator
      */
     Iterator getIterator();

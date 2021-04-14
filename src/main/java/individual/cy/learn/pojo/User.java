@@ -25,7 +25,7 @@ public class User {
         }
         User user = (User) o;
         return id == user.id &&
-                Objects.equal(name, user.name) &&
-                Objects.equal(email, user.email);
+            Objects.equal(name, user.name) &&
+            Objects.equal(email, user.email);
     }
 }

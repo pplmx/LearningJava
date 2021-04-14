@@ -14,10 +14,10 @@ import java.util.Scanner;
 public class Client {
     public static void main(String[] args) throws IOException {
         try (
-                Socket client = new Socket("localhost", 10010);
-                Scanner scanner = new Scanner(System.in);
-                PrintWriter output =
-                        new PrintWriter(client.getOutputStream(), true)
+            Socket client = new Socket("localhost", 10010);
+            Scanner scanner = new Scanner(System.in);
+            PrintWriter output =
+                new PrintWriter(client.getOutputStream(), true)
         ) {
             String words;
             while (scanner.hasNext()) {

@@ -28,6 +28,17 @@ public class Computer {
         return new Computer.ComputerBuilder(cpu, ram);
     }
 
+    @Override
+    public String toString() {
+        return "Computer{" +
+            "cpu='" + cpu + '\'' +
+            ", ram='" + ram + '\'' +
+            ", keyboard='" + keyboard + '\'' +
+            ", headset='" + headset + '\'' +
+            ", display='" + display + '\'' +
+            '}';
+    }
+
     public static class ComputerBuilder {
         private final String cpu;
         private final String ram;
@@ -58,16 +69,5 @@ public class Computer {
             this.display = display;
             return this;
         }
-    }
-
-    @Override
-    public String toString() {
-        return "Computer{" +
-                "cpu='" + cpu + '\'' +
-                ", ram='" + ram + '\'' +
-                ", keyboard='" + keyboard + '\'' +
-                ", headset='" + headset + '\'' +
-                ", display='" + display + '\'' +
-                '}';
     }
 }

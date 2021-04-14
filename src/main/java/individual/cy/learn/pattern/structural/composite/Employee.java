@@ -8,10 +8,10 @@ import java.util.List;
  */
 public class Employee {
     private final int id;
+    private final List<Employee> subordinateList;
     private String name;
     private String dept;
     private int salary;
-    private final List<Employee> subordinateList;
 
     public Employee(int id, String name, String dept, int salary) {
         this.id = id;
@@ -64,10 +64,10 @@ public class Employee {
     @Override
     public String toString() {
         return "Employee{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", dept='" + dept + '\'' +
-                ", salary=" + salary +
-                '}';
+            "id=" + id +
+            ", name='" + name + '\'' +
+            ", dept='" + dept + '\'' +
+            ", salary=" + salary +
+            '}';
     }
 }

@@ -36,7 +36,7 @@ public class CompositePatternTester {
 
         // print ceo immediate subordinate's immediate subordinate
         ceo.getSubordinateList().stream()
-                .flatMap(ceoSubordinate -> ceoSubordinate.getSubordinateList().stream())
-                .forEach(System.out::println);
+            .flatMap(ceoSubordinate -> ceoSubordinate.getSubordinateList().stream())
+            .forEach(System.out::println);
     }
 }

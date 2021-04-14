@@ -17,12 +17,12 @@ public enum ShapeCreator {
         this.shapeSupplier = shapeSupplier;
     }
 
-    public Shape getInstance() {
-        return shapeSupplier.get();
-    }
-
     public static Shape getShape(ShapeCreator creator) {
         return creator.getInstance();
+    }
+
+    public Shape getInstance() {
+        return shapeSupplier.get();
     }
 }
 

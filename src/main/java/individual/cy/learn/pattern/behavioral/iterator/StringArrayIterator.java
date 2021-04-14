@@ -3,7 +3,7 @@ package individual.cy.learn.pattern.behavioral.iterator;
 /**
  * @author mystic
  */
-public class StringArrayIterator implements Iterator{
+public class StringArrayIterator implements Iterator {
 
     private final String[] args;
     private int idx;
@@ -19,7 +19,7 @@ public class StringArrayIterator implements Iterator{
 
     @Override
     public Object next() {
-        if(idx < args.length){
+        if (idx < args.length) {
             return args[idx++];
         }
         return null;

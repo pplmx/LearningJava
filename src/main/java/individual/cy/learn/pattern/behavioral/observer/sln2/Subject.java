@@ -20,6 +20,7 @@ public interface Subject {
 
     /**
      * notify all observers
+     *
      * @param event event
      */
     void notifyObservers(String event);

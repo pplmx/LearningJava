@@ -44,14 +44,14 @@ public class Student {
         }
         Student student = (Student) o;
         return Objects.equals(id, student.id) &&
-                Objects.equals(age, student.age);
+            Objects.equals(age, student.age);
     }
 
     @Override
     public String toString() {
         return "Student{" +
-                "id=" + id +
-                ", age=" + age +
-                '}';
+            "id=" + id +
+            ", age=" + age +
+            '}';
     }
 }

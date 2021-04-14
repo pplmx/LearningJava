@@ -20,11 +20,11 @@ public class Subject {
         notifyAllObservers();
     }
 
-    public void attach(AbstractObserver observer) {
-        observerList.add(observer);
-    }
-
     public void notifyAllObservers() {
         observerList.forEach(AbstractObserver::update);
+    }
+
+    public void attach(AbstractObserver observer) {
+        observerList.add(observer);
     }
 }
